@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.626),rgba(4, 9, 30, 0.53)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 90px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;   
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(48, 134, 105);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box h2{
+    font-family: serif;
+    font-size: 60px;
+
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    font-family: serif;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: medium;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid rgb(48, 134, 105);
+    background-color: rgb(48, 134, 105);
+    transition: 1s;
+}
+.instruments{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.instruments p{
+    background-color: rgba(255, 228, 196, 0.525);
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(48, 134, 105);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.inst-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin: 10px 15px 30px; 
+    position: relative;
+    overflow: hidden;
+}
+
+.inst-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(0, 226, 200, 0.388);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.row{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.stores-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.stores img{
+    width: 100%;
+    border-radius: 10px;
+}
+.stores h1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.stores p{
+    color:  rgb(48, 134, 105);
+    background-color: rgba(255, 228, 196, 0.525);
+}
+
+.stores h3{
+    background-color: rgba(0, 226, 200, 0.178)
+}
+
+.reviews{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.reviews-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: rgba(255, 228, 196, 0.525);;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.reviews-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.reviews-col p{
+    padding: 0;
+}
+.reviews-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.reviews-col .fa{
+    color: #f44336;
+}
+
+.classes{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.422),rgba(0, 0, 0, 0.395)),url(images/banner2.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.classes h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer h4{
+    font-size: 30px;
+}
+
+.footer p{
+    line-height: 24px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    background-color: rgba(255, 228, 196, 0.525);;
+}
